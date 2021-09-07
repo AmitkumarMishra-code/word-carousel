@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    width:450px;
+    height: 450px;
+    background-color: #f39c12;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    color: white;
+    font-size: 32px;
+    text-shadow: 3px 3px 5px #e67e22;
+    height: 44px;
+}
+
+.words{
+    font-weight: 600;
+    margin-left: 0.5rem;
+    height:100%;
+    overflow: hidden;
+    position: relative;
+    width : 150px;
+}
+
+.carousel{
+    position: absolute;
+    animation: carousel 5000ms linear infinite forwards;
+}
+
+@keyframes carousel {
+    0%{
+        top:0;
+    }
+    20%{
+        top: -44px;
+    }
+    30%{
+        top: -44px;
+    }
+    45%{
+        top:-88px;
+    }
+    55%{
+        top:-88px;
+    }
+    70%{
+        top:-132px;
+    }
+    80%{
+        top:-132px;
+    }
+    100%{
+        top:-176px;
+    }
+}
